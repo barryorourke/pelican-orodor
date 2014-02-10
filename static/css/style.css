@@ -1,35 +1,50 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lobster|Ubuntu);
 @import url(bootstrap.min.css);
 @import url(font-awesome.min.css);
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
-  background: #fcfff5;
+  background: #d1dbbd;
 }
 
-div.navbar {
+a { 
+  color: #3e606f;
+}
+
+a:hover {
+  color: #193441;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+header.navbar {
   background: #193441;
+  border-radius: 0;
+  border-color: transparent;
 }
 
 /* navbar default color */
-div.navbar a.navbar-brand,
-div.navbar ul.social li a i,
-div.navbar ul.primary-links li a {
+header.navbar a.navbar-brand,
+header.navbar ul.social li a i,
+header.navbar ul.primary-links li a {
   color: #d1dbbd;
 }
 
 /* navbar hover & active color */
-div.navbar a.navbar-brand:hover,
-div.navbar ul.primary-links li a:hover,
-div.navbar ul.primary-links li.active a,
-div.navbar ul.primary-links li.active a:hover {
+header.navbar a.navbar-brand:hover,
+header.navbar ul.primary-links li a:hover,
+header.navbar ul.primary-links li.active a,
+header.navbar ul.primary-links li.active a:hover {
   background: transparent;
   color: #fcfff5;
 }
 
 /* branding */
-div.navbar-default a.navbar-brand {
+header.navbar-default a.navbar-brand {
   letter-spacing: 0.2rem;
   font-family: "Lobster", sans-serif;
   font-weight: normal;
@@ -84,4 +99,15 @@ ul.social li.tumblr a:hover {
 ul.social li.twitter a:hover {
   background-color: #44ccf6;
   border-color: #44ccf6;
+}
+
+div.main-content {
+  padding: 2.5rem;
+  background-color: #fcfff5;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+article h2 {
+  border-bottom: 1px solid #d1dbbd;
 }
