@@ -21,6 +21,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+blockquote {
+  border:            0;
+}
+
+blockquote p {
+  font-style:        italic; 
+  font-size:         1.5rem;
+  margin:            1rem 3rem;
+  color:             #555;
+}
+
 header.navbar {
   background: #193441;
   border-radius: 0;
@@ -116,6 +127,12 @@ article.post {
 article.post h2 {
   border-bottom: 1px solid #d1dbbd;
   font-size: 2.8rem;
+}
+
+article.post h3 {
+  margin: 1.5rem 0;
+  color: #3e606f;
+  font-size: 2.3rem;
 }
 
 article.post .post-tags,
