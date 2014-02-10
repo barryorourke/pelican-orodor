@@ -102,12 +102,37 @@ ul.social li.twitter a:hover {
 }
 
 div.main-content {
-  padding: 2.5rem;
+  padding-bottom: 4rem;
+  margin-bottom: 6rem;
   background-color: #fcfff5;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-article h2 {
-  border-bottom: 1px solid #d1dbbd;
+article.post {
+  margin: 4rem 6rem;
 }
+
+article.post h2 {
+  border-bottom: 1px solid #d1dbbd;
+  font-size: 2.8rem;
+}
+
+article.post .post-tags,
+article.post .post-time {
+  margin: 0.25em;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #193441;
+}
+
+article.post .post-tags .fa,
+article.post .post-time .fa {
+  color: #193441;
+}
+
+article.post .post-content {
+  margin-top: 1em;
+  text-align: justify;
+}
+
