@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
+  <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico" />
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ SITEURL }}">{{ SITENAME }}</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+      <ul class="nav navbar-nav primary-links">
+        <li {% if page_name == 'index' %}class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% if pages %}
+          {% for p in pages %}
+          <li {% if p == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+          {% endif %}
+        {% endif %}
+      </ul>
+      <ul class="nav navbar-nav social">
+      {% if FEED_ATOM %}
+        <li class="rss"><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}"><i class="fa fa-rss"></i></a></li>
+      {% endif %}
+      {% if FEED_RSS %}
+        <li class="rss"><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}"><i class="fa fa-rss"></i></a></li>
+      {% endif %}
+      {% for name, link in SOCIAL %}
+        <li class="{{name}}"><a href="{{ link }}"><i class="fa fa-{{ name }}"></i></a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>
