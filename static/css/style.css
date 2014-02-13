@@ -4,35 +4,38 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.6em;
   background: #d1dbbd;
 }
 
-a { 
+a {
   color: #3e606f;
 }
 
 a:hover {
-  color: #193441;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.2rem;
+  font-family: "Lobster", sans-serif;
+  font-weight: normal;
   margin: 0;
 }
 
 blockquote {
-  border:            0;
+  border: 0;
 }
 
 blockquote p {
-  font-style:        italic; 
-  font-size:         1.5rem;
-  margin:            1rem 3rem;
-  color:             #555;
+  font-style: italic; 
+  font-size: 1.4rem;
+  margin: 1rem 3rem;
+  color: #555;
 }
 
 header.navbar {
+  margin-bottom: 3rem;
   background: #193441;
   border-radius: 0;
   border-color: transparent;
@@ -113,24 +116,23 @@ ul.social li.twitter a:hover {
 }
 
 div.main-content {
-  padding-bottom: 4rem;
-  margin-bottom: 6rem;
   background-color: #fcfff5;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 article.post {
-  margin: 4rem 6rem;
+  margin: 5rem 4rem 4rem 4rem;
 }
 
 article.post h2 {
+  padding-bottom: 0.25rem;
   border-bottom: 1px solid #d1dbbd;
   font-size: 2.8rem;
 }
 
 article.post h3 {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   color: #3e606f;
   font-size: 2.3rem;
 }
@@ -150,6 +152,12 @@ article.post .post-time .fa {
 
 article.post .post-content {
   margin-top: 1em;
-  text-align: justify;
 }
 
+nav.pagination {
+  padding: 0 10rem;
+}
+
+ul.pager {
+  margin: 0;
+}
