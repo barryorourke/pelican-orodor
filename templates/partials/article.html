@@ -1,0 +1,22 @@
+                <article class="post">
+                    <header class="post-header">
+                        <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                        <span class="post-time">
+                            <i class="fa fa-calendar"> </i>
+                            <time datetime="{{ article.date| strftime('%A, %B %d, %Y') }}">
+                                {{ article.date| strftime('%A, %B %d, %Y') }}
+                            </time>
+                        </span>
+                        {% if article.tags %}
+                        <span class="post-tags pull-right">
+                            <i class="fa fa-tags"></i>
+                            {% for tag in article.tags %}
+                            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </span>
+                        {% endif %}
+                    </header>
+                    <section class="post-content">
+                    {{ article.content }}
+                    </section>
+                </article>
