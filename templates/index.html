@@ -3,7 +3,7 @@
             {% if articles %}
             <main class="content" role="main">
             {% for article in (articles_page.object_list if articles_page else articles) %}
-	                    {% include "partials/article.html" %}
+	        {% include "partials/article.html" %}
             {% endfor %}
             </main>
             {% endif %}
