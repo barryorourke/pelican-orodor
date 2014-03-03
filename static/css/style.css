@@ -1,24 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster|Ubuntu);
 @import url(bootstrap.min.css);
 @import url(font-awesome.min.css);
-
 body {
+  background: #d1dbbd;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6em;
-  background: #d1dbbd;
 }
 
 a {
   color: #3e606f;
 }
-
 a:hover {
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 0.2rem;
   font-family: "Lobster", sans-serif;
+  letter-spacing: 0.2rem;
   font-weight: normal;
   margin: 0;
 }
@@ -28,7 +26,7 @@ blockquote {
 }
 
 blockquote p {
-  font-style: italic; 
+  font-style: italic;
   font-size: 1.4rem;
   margin: 1rem 3rem;
   color: #555;
@@ -88,7 +86,7 @@ ul.social li a {
   border: 2px solid #d1dbbd;
   padding: 0.5rem;
   text-align: center;
-} 
+}
 
 ul.social li.flickr a:hover {
   background-color: #72858c;
@@ -106,8 +104,8 @@ ul.social li.rss a:hover {
 }
 
 ul.social li.tumblr a:hover {
- background-color: #2c4762;
- border-color: #2c4762;
+  background-color: #2c4762;
+  border-color: #2c4762;
 }
 
 ul.social li.twitter a:hover {
@@ -118,9 +116,9 @@ ul.social li.twitter a:hover {
 div.main-wrapper {
   background-color: #fcfff5;
   border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  padding: 3rem 4rem 2rem 4rem;
-  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 3rem 4rem;
+  margin-bottom: 3rem;
 }
 
 article.post {
@@ -203,4 +201,11 @@ aside section.tags .tag-3 {
 
 aside section.tags .tag-4 {
   font-size: 1.2rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  background: #193441;
+  color: #d1dbbd;
 }
