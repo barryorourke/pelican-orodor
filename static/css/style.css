@@ -5,12 +5,13 @@
 body {
   background: #d1dbbd;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 a {
   color: #3e606f;
 }
+
 a:hover {
   text-decoration: none;
 }
