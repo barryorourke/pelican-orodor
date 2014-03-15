@@ -162,6 +162,11 @@ article.post .post-content {
   margin-top: 1em;
 }
 
+article img {
+  border: 2px solid #000000;
+  margin: 0 1rem 2rem 2rem;
+}
+
 nav.pagination {
   margin: 0;
 }
