@@ -1,5 +1,5 @@
             {% if articles_page and articles_paginator.num_pages > 1 %}
-            <!-- pagaination start -->
+            <!-- pagination start -->
             <nav class="col-md-12 text-center pagination">
                 <ul class="pager">
                 {% if articles_page.has_previous() %}
@@ -20,6 +20,5 @@
                 {% endif %}
                 </ul>
             </nav>
-	    <!-- pagination end -->
+            <!-- pagination end -->
             {% endif %}
-

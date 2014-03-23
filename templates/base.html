@@ -81,18 +81,18 @@
             </div>
         </div>
     </header>
-  
+
     <div class="container main-wrapper">
         <div class="col-md-9 main-content">
 	{% block content %}
 	{% endblock %}
         </div>
         <div class="col-md-3 sidebar">
-	    <aside>
+            <aside>
                 <section class="avatar">
-		    <img class="img-responsive img-circle img-avatar" src="{{ SITE_URL }}/theme/images/barry.jpg">
-		    <h3 class"author">{{ AUTHOR }}</h3>
-  		    <div class="meta">ageing goth, fat dad and sysadmin with mild hemiplegia.</div>
+                    <img class="img-responsive img-circle img-avatar" src="{{ SITE_URL }}/theme/images/barry.jpg">
+                    <h3 class"author">{{ AUTHOR }}</h3>
+  		    <div class="meta">{{ AUTHOR_BIO }}</div>
                 </section>
 		<section class="tags">
                     <h3><i class="fa fa-tags"></i> Tags</h3>
