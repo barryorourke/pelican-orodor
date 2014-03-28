@@ -1,9 +1,9 @@
 pelican-orodor
 ==============
 
-# Requirements
+## Requirements
 
-## Pelican
+### Pelican
 
 We use the pelican [assets plugin](https://github.com/getpelican/pelican-plugin/tree/master/assets), which uses the webassets python module:
 
@@ -18,7 +18,7 @@ PLUGIN_PATH = '/path/to/pelican/plugins/directory'
 PLUGINS = ['assets']
 ```
 
-## Bower
+### Bower
 
 We use [bower](http://bower.io) to install bootstrap, font-awesome and the like.
 
@@ -29,7 +29,7 @@ npm install bower
 bower install
 ```
 
-## SASS
+### SASS
 
 We use [sass](http://sass-lang.com/) to generate our CSS files.
 
