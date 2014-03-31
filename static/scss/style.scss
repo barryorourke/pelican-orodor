@@ -1,11 +1,29 @@
-$font-family-base:	"Ubuntu", sans-serif;
-$body-bg:		#d1dbbd;
+$font-family-base:		"Ubuntu", sans-serif;
+$font-size-base:		16px;
+$body-bg:			#d1dbbd;
+$link-color:			#3e606f;
+$headings-font-weight:		normal;
+$blockquote-border-color:	#fff;
 
 @import url(https://fonts.googleapis.com/css?family=Lobster|Ubuntu);
 
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 @import '../bower_components/font-awesome/scss/font-awesome.scss';
 
-body {
-  font-size: 1.5em;
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+blockquote {
+  p {
+    font-style: italic;
+    font-size: 1.4rem;
+    margin: 1rem 3rem;
+    color: #555;
+  }
 }
