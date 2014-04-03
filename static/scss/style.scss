@@ -1,9 +1,18 @@
-$font-family-base:		"Ubuntu", sans-serif;
-$font-size-base:		16px;
-$body-bg:			#d1dbbd;
-$link-color:			#3e606f;
-$headings-font-weight:		normal;
-$blockquote-border-color:	#fff;
+$font-family-base:			"Ubuntu", sans-serif;
+$font-size-base:			16px;
+$body-bg:				#d1dbbd;
+$link-color:				#3e606f;
+$headings-font-weight:			normal;
+$blockquote-border-color:		#fff;
+$navbar-default-bg:			#193441;
+$navbar-border-radius:			0;
+$navbar-default-border:			transparent;
+$navbar-default-brand-color:		#d1dbbd;
+$navbar-default-link-color:		#d1dbbd;
+$navbar-default-link-hover-color:	#fcfff5;
+$navbar-default-link-hover-bg:		transparent;
+$navbar-default-link-active-color:	#fcfff5;
+$navbar-default-link-active-bg:		transparent;
 
 @import url(https://fonts.googleapis.com/css?family=Lobster|Ubuntu);
 

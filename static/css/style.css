@@ -1,26 +1,3 @@
-header.navbar {
-  margin-bottom: 3rem;
-  background: #193441;
-  border-radius: 0;
-  border-color: transparent;
-}
-
-/* navbar default color */
-header.navbar a.navbar-brand,
-header.navbar ul.social li a i,
-header.navbar ul.primary-links li a {
-  color: #d1dbbd;
-}
-
-/* navbar hover & active color */
-header.navbar a.navbar-brand:hover,
-header.navbar ul.primary-links li a:hover,
-header.navbar ul.primary-links li.active a,
-header.navbar ul.primary-links li.active a:hover {
-  background: transparent;
-  color: #fcfff5;
-}
-
 /* branding */
 header.navbar-default a.navbar-brand {
   letter-spacing: 0.2rem;
